@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; --ink:#eee9dd; --dim:#a7a397; --night:#101310; }
+* { box-sizing: border-box; }
+html, body { margin:0; min-height:100%; background:var(--night); color:var(--ink); }
+body { font-family: Georgia, 'Times New Roman', serif; }
+button, input { font:inherit; }
+button:focus-visible, input:focus-visible, [tabindex]:focus-visible { outline:1px solid #e5dcc6; outline-offset:5px; }
+.screen { min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:clamp(1.5rem,5vw,5rem); animation:arrive 1.3s ease both; }
+.eyebrow { font-family:ui-sans-serif,system-ui,sans-serif; text-transform:uppercase; letter-spacing:.24em; font-size:.65rem; color:var(--dim); }
+.quiet-button { border:1px solid rgba(238,233,221,.35); padding:.85rem 1.8rem; font-family:ui-sans-serif,system-ui,sans-serif; font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; transition:background .5s,color .5s,border .5s; }
+.quiet-button:hover { background:var(--ink); color:var(--night); border-color:var(--ink); }
+.quiet-button:disabled { opacity:.4; cursor:not-allowed; }
+@keyframes arrive { from { opacity:0; transform:translateY(8px) } to { opacity:1; transform:none } }
+@keyframes breathe { 0%,100%{opacity:.55} 50%{opacity:1} }
+@media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation-duration:.01ms!important; transition-duration:.01ms!important; } }

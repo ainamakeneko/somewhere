@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="screen text-center"><p className="eyebrow">Somewhere else</p><h1 className="mt-7 text-4xl">This memory isn&apos;t here.</h1><a href="/" className="quiet-button mt-12">Return</a></main>}

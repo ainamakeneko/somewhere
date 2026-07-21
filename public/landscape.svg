@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1050">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#76868a"/><stop offset=".55" stop-color="#b0aaa0"/><stop offset="1" stop-color="#d2b995"/></linearGradient>
+ <linearGradient id="water" x2="0" y2="1"><stop stop-color="#829290"/><stop offset="1" stop-color="#313f3c"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+ <pattern id="rain" width="75" height="50" patternUnits="userSpaceOnUse"><path d="M10 8l-5 14M53 30l-4 11" stroke="#edf1ec" opacity=".12"/></pattern>
+</defs>
+<rect width="1800" height="1050" fill="url(#sky)"/>
+<g opacity=".38" fill="#e2ded3" filter="url(#soft)"><ellipse cx="350" cy="185" rx="340" ry="95"/><ellipse cx="1110" cy="105" rx="390" ry="110"/><ellipse cx="1570" cy="250" rx="280" ry="80"/></g>
+<circle cx="1450" cy="230" r="80" fill="#ead4ac" opacity=".52"/>
+<path d="M0 610L160 460l100 68 190-238 190 242 130-110 180 162 190-250 210 218 140-145 300 210v240H0z" fill="#465450"/>
+<path d="M0 640l220-128 165 90 210-200 195 202 174-93 190 145 213-194 180 155 253-100v190H0z" fill="#5d6963" opacity=".8"/>
+<path d="M0 654c320-64 506 25 780-12 308-42 531-112 1020 14v394H0z" fill="url(#water)"/>
+<g fill="none" stroke="#d7c8aa" opacity=".26"><path d="M70 725q260 24 510-4M930 750q330-35 700 7M260 868q250-40 570 2M1100 916q230-32 530 4"/><path d="M1230 685l180-3M120 804l170 4M690 785l240-7"/></g>
+<!-- island and cottage -->
+<path d="M330 720q155-91 330 0z" fill="#26322e"/><g transform="translate(450 590)"><rect width="108" height="72" fill="#695b4a"/><path d="M-18 3l72-51 76 51" fill="#333b37"/><rect x="18" y="30" width="22" height="42" fill="#292923"/><rect x="70" y="24" width="18" height="18" fill="#efc376" opacity=".9"/><path d="M105-33v28" stroke="#342f29" stroke-width="12"/><path d="M110-48q38-25 65 0" fill="none" stroke="#ddd1bd" opacity=".3" stroke-width="15"/></g>
+<!-- boat --> <g transform="translate(1120 755)"><path d="M0 0q90 38 190 0l-34 44H36z" fill="#4b2e27"/><path d="M91-112V8M93-105l85 70H95z" fill="#d0c8b5" opacity=".82"/><circle cx="69" cy="9" r="9" fill="#d4ad69"/></g>
+<!-- trees -->
+<g fill="#202d29"><path d="M90 680l42-150 42 150zM150 685l35-115 35 115zM705 670l45-170 45 170zM770 679l36-130 36 130zM1580 688l48-180 48 180zM1650 695l38-145 38 145z"/></g>
+<!-- birds and details -->
+<g fill="none" stroke="#26302f" stroke-width="5" stroke-linecap="round"><path d="M850 260q15-15 30 0q15-15 30 0M980 325q12-12 24 0q12-12 24 0M280 220q9-10 20 0q10-10 20 0"/></g>
+<g fill="#d6b06c"><circle cx="144" cy="717" r="4"/><circle cx="161" cy="724" r="3"/><circle cx="760" cy="690" r="4"/><circle cx="1540" cy="704" r="4"/></g>
+<rect width="1800" height="1050" fill="url(#rain)"/>
+</svg>
